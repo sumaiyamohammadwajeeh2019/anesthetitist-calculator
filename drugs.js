@@ -34,7 +34,17 @@ const DRUGS=[
 {name:'Phenylephrine 10mg/ml 1ml',cls:'Vasopressor',dose:'50-100 mcg IV bolus; 0.1-0.5 mcg/kg/min',ind:'Hypotension; maintain perfusion',ci:'Severe bradycardia; peripheral vascular disease',p:[55,50,52,58,56,48,57]},
 {name:'Naloxone 0.4mg/ml 1ml',cls:'Opioid antagonist',dose:'0.04-0.4 mg IV (titrate)',ind:'Opioid reversal; respiratory depression',ci:'Opioid-dependent (precipitates withdrawal)',p:[30,27,28,32,31,26,31]},
 {name:'Flumazenil 0.1mg/ml 5ml',cls:'Benzodiazepine antagonist',dose:'0.1-0.2 mg IV (max 1mg)',ind:'Benzodiazepine reversal',ci:'Seizure-prone; TCA overdose; raised ICP',p:[220,205,210,235,225,195,230]},
-{name:'Dantrolene 20mg vial',cls:'MH antidote',dose:'2.5 mg/kg IV (max 10 mg/kg)',ind:'Malignant hyperthermia',ci:'None absolute (emergency use)',p:[950,900,920,980,960,880,970]}
+{name:'Dantrolene 20mg vial',cls:'MH antidote',dose:'2.5 mg/kg IV (max 10 mg/kg)',ind:'Malignant hyperthermia',ci:'None absolute (emergency use)',p:[950,900,920,980,960,880,970]},
+{name:'Articaine 4% 1.7ml',cls:'Local anaesthetic',dose:'Max 7 mg/kg',ind:'Dental/regional blocks',ci:'Hypersensitivity; methemoglobinemia (relative)',p:[45,42,44,48,46,40,47]},
+{name:'Mepivacaine 2% 50ml',cls:'Local anaesthetic',dose:'Max 4.4 mg/kg (6.6 with adren)',ind:'Infiltration; nerve blocks',ci:'Hypersensitivity; heart block',p:[90,85,88,95,92,80,93]},
+{name:'Prilocaine 4% 1.8ml',cls:'Local anaesthetic',dose:'Max 6 mg/kg',ind:'Dental; IV regional (Bier)',ci:'Methemoglobinemia; hypersensitivity',p:[35,32,33,38,36,30,37]},
+{name:'Chloroprocaine 3% 20ml',cls:'Local anaesthetic',dose:'Max 11 mg/kg',ind:'Spinal/epidural; short procedures',ci:'Hypersensitivity; PABA allergy',p:[60,55,58,65,62,52,63]},
+{name:'Tetracaine 0.5% 5ml',cls:'Local anaesthetic',dose:'Max 1.5 mg/kg (spinal)',ind:'Spinal anaesthesia; ophthalmic',ci:'Hypersensitivity; infection at site',p:[25,22,23,28,26,20,27]},
+{name:'Buprenorphine 0.3mg/ml 1ml',cls:'Opioid',dose:'0.3-0.6 mg SL/IM/IV',ind:'Analgesia; opioid dependence',ci:'Respiratory depression; MAO inhibitors',p:[120,110,115,130,125,105,128]},
+{name:'Tramadol 50mg/ml 2ml',cls:'Opioid (weak)',dose:'50-100 mg IV/IM/PO',ind:'Moderate pain',ci:'Seizure disorder; MAO inhibitors; respiratory depression',p:[18,16,17,20,19,15,19]},
+{name:'Dexketoprofen 25mg/ml 2ml',cls:'NSAID',dose:'12.5-25 mg IV/IM',ind:'Acute pain',ci:'Peptic ulcer; renal/hepatic impairment; asthma',p:[40,37,38,42,40,35,41]},
+{name:'Parecoxib 40mg vial',cls:'NSAID (COX-2)',dose:'40 mg IV/IM',ind:'Postoperative pain',ci:'Sulfa allergy; CV disease; renal impairment',p:[260,245,250,275,265,240,270]},
+{name:'Gabapentin 300mg cap',cls:'Anticonvulsant/analgesic',dose:'300-1200 mg PO',ind:'Neuropathic pain; adjunct',ci:'Severe renal impairment; hypersensitivity',p:[8,7,7,9,8,6,8]}
 ];
 function renderDrugRef(){
   const q=(document.getElementById('drugQ')?.value||'').toLowerCase();
